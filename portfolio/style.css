@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: poppins;
+   
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: rgba(0,0,0,1);
+   
+   
+    box-shadow:10px 10px 30px 30px grey;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,1);
+    color:white;
+    height:100px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.navbar .logo{
+    margin:5px 0 0 10px;
+}
+.navbar .logo span{
+    font-size: 40px;
+  
+}
+.navbar .logo:hover {
+    margin-left: 30px;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .logo span i{
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(43, 226, 226);
+    
+}
+.navbar ul li{
+    list-style-type: none;
+    margin:40px 50px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+.navbar ul{
+    display: flex;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 23px;;
+   
+}
+.navbar ul li:hover{
+   
+    padding-bottom:0px;
+    transform: scale(1.1);
+}
+.navbar ul li:hover a{
+    color:red;
+    padding-bottom: 10px;
+    border-bottom: 2px solid green;
+}
+.dash-info {
+    display: flex;
+    justify-content: space-between;
+    margin:0px 0px 0px 50px;
+  height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url(images/profile.jpg);
+    background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+ 
+}
+.dash-info .content span{
+    display: block;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin:100px 0px 0px 100px;
+  color: white;
+ 
+}
+.container .content{
+    margin:250px 0px 0px 0px;
+    width: 100%;
+
+}
+.container .content h1{
+    transition: all 3s ease-in-out;
+    letter-spacing: 5px;
+    font-size:40px;
+    color: white;
+    width:500px;
+}
+.container .content  .blink{
+    margin: 0 0 50px 10px;
+    width: 0;
+    padding: 20px 2px 10px 2px;
+    background-color: white;
+   animation: blink 0.4s infinite ease;
+}
+.social ul {
+           display: flex;
+        
+}
+.social ul li{
+margin: 20px;
+list-style-type: none;
+color: red;
+font-size: 40px;
+transition: 0.3s ease-in-out;
+}
+.fa-facebook,.fa-linkedin{
+color: blue;
+}
+.social ul li:hover{
+cursor: pointer;
+transform: scale(1.1);
+
+}
+.services{
+
+    height:100vh;
+    opacity:0;
+
+  
+}
+.services h2,.skills h2,.contact h2{
+letter-spacing: 5px;
+
+color: white;
+font-size: 50px;
+text-align: center;
+}
+.services .img img{
+width:300px;
+height: 200px;
+}
+.services  .info {
+margin:100px 100px 20px 100px;
+display: flex;
+justify-content: space-between;
+
+}
+.services .info .item{
+    transition: all 0.2s ease-in-out ;
+box-shadow: 5px 5px 20px 2px grey;
+padding:10px;
+
+}
+.services .info .item:hover h3{
+    color: white;
+}
+.services .info .item:hover{
+    box-shadow: 5px 5px 20px 2px white;
+transform: scale(1.03);
+}
+.con{
+width: 500px;
+}
+.con i,.con h1{
+
+display: inline;
+}
+
+.social .fa-linkedin{
+display: none;
+animation:fade 0.3s ease-in-out;
+
+}
+.social .fa-instagram{
+display: none;
+animation:fade 0.3s ease-in-out ;
+}
+.social .fa-facebook{
+display: none;
+animation:fade 0.3s ease-in-out ;
+}
+.social .fa-youtube{
+display: none;
+animation:fade 0.3s ease-in-out ;
+}
+.services .info .item h3{
+    text-align: center;
+    color: brown;
+}
+.skills{
+    height:100vh;
+    color: white;
+}
+.skills .con{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 100px 0px 100px;
+}
+
+.skills .con span{
+    margin-top:10px;
+    display: block;
+    height: 100px;
+  width: 400px;
+}
+
+.skills .con span i{
+    margin-right: 20px;
+    font-size: 40px;
+    color:mediumaquamarine ;
+}
+.fa-mobile{
+
+    margin-left:10px ;
+    }
+    .skills .con span b{
+        font-size: 26px;
+    }
+    
+    .skills .con  .right{
+        margin-left: 200px;
+    }
+    .skills .con  .right .item{
+        margin-top: 30px;
+        height: 50px;
+     
+        width: 500px;
+        background:none;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+  
+       
+    }
+    .skills .con  .right .item h4{
+        padding-top: 10px;
+        text-align:center ;
+   
+    }
+    .skills .con  .right .item h4 i{
+       display: inline-block;
+      
+    }
+    .skills .con  .right .item:hover{
+        cursor: pointer;
+        
+    }
+    .skills .con  .right .html >h4{
+        height: 80%;
+        width: 90%;
+         background-color: rgba(5, 238, 255, 0.422); 
+        border-radius: 10px;
+        
+    }
+    .html ,.css,.js,.php{
+opacity: 0;
+    }
+    .skills .con  .right .css >h4{
+        height: 80%;
+        width: 80%;
+        background-color:rgba(247, 122, 5, 0.849);
+        border-radius: 10px;
+    }
+    .skills .con  .right .js >h4{
+        height: 80%;
+        width: 70%;
+        background-color: rgba(217, 255, 5, 0.3);
+        border-radius: 10px;
+    }
+    .skills .con  .right .php >h4{
+        height: 80%;
+        width: 80%;
+        background-color: rgba(255, 5, 255, 0.3);
+        border-radius: 10px;
+    }
+    .anim{
+        animation: slide 1s  ease-in forwards;
+    }
+    .anim1{
+        animation: slide 1s 1s  ease-in forwards;
+    }
+    .anim2{
+        animation: slide 1s 1.5s ease-in forwards;
+    }
+    .anim3{
+        animation: slide 1s 2s ease-in forwards;
+    }
+    .serviceanim{
+        animation: services 1s ease-in-out forwards;
+    }
+    .contact{
+        height: 100vh;
+        color: white;
+    }
+  .contact .con{
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+transform: translate(-40%);
+  }
+  .contact .con .form div{
+    height: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .con .form div input::placeholder{
+    
+  }
+  .contact .con .form div input{
+    background: none;
+    width: 400px;
+    height: 30px;
+    color: white;
+    outline: none;
+    border-right: none;
+  }
+  .contact h2{
+    font-size: 25px;
+  }
+  .contact .con .form div textarea{
+    background: none;
+    width: 400px;
+    color: white;
+    outline: none;
+  }
+  .contact-soc{
+    margin-left: 0px;
+    font-size: 40px;
+    margin-top: 200px;
+    display: flex;
+
+  }
+  .fa-whatsapp{
+    color: green;
+  }
+  .fa-instagram{
+    color:red;
+  }
+  .fa-pinterest{
+    color:red;
+  }
+  .contact-soc div:nth-child(n+2){
+    margin-left: 60px;
+  }
+  .contact-soc div:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  button{
+    width: 400px;
+    height: 40px;
+    color: green;
+    font-size: 20px;
+    margin-top: 200px;
+    border: none;
+    background: none;
+    border-radius: 20px;
+    font-weight: bold;
+    /* background: white; */
+  }
+  button:hover{
+   border: 1px solid white;
+    cursor: pointer;
+   background: none;
+  }
+ @keyframes slide{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+ }
+@keyframes blink{
+0%{
+    opacity: 0%;
+}
+100%{
+    opacity: 100%;
+    
+}
+}
+@keyframes fade{
+from{
+    opacity:0%;
+}
+to{
+    opacity: 100%;
+    transform: scale(1.3);
+}
+
+}
+  @keyframes  services{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}  
